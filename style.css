@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(130deg, #6ee7b7, #3b82f6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3rem 1rem 5rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  .footer {
+    padding: 1rem;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+  }
+  .footer::before {
+    content: "\2014\00a0";
+  }
+  .weatherForm {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+  }
+  .cityInput {
+    flex: 1;
+    padding: 0.6rem 0.8rem;
+    border: 2px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(4px);
+    color: #1f2937;
+    outline: none;
+  }
+  .cityInput::placeholder {
+    color: #6b7280;
+  }
+  .cityInput:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+  }
+  button[type="submit"] {
+    padding: 0.75rem 1.5rem;
+    background: rgba(37, 99, 235, 0.6);
+    color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.5s ease;
+  }
+  button[type="submit"]:hover {
+    background: #1d4ed8;
+  }
+  .card, .errorCard {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(240, 240, 240, 0.4));
+    backdrop-filter: blur(8px);
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    animation: cardEnter 0.5s ease-out;
+  }
+  .hidden {
+    display: none;
+  }
+  .cityDisplay {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1f2937;
+    animation: fadeIn 0.5s ease-out;
+  }
+  .tempDisplay {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    animation: fadeIn 0.7s ease-out 0.1s;
+    animation-fill-mode: both;
+  }
+  .humidityDisplay {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4b5563;
+    animation: fadeIn 0.8s ease-out 0.2s;
+    animation-fill-mode: both;
+  }
+  .descDisplay {
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-style: italic;
+    color: #4b5563;
+    text-transform: capitalize;
+    animation: fadeIn 0.9s ease-out 0.3s;
+    animation-fill-mode: both;
+  }
+  .weatherEmoji {
+    font-size: 5rem;
+    animation: fadeIn 0.9s ease-out 0.4s;
+    animation-fill-mode: both;
+  }
+  .errorCard {
+    background: rgba(254, 242, 242, 0.9);
+    color: #991b1b;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  @keyframes cardEnter {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }

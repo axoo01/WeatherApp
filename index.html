@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div class="container">
+          <form class="weatherForm">
+            <input type="text" class="cityInput" placeholder="Enter city">
+            <button type="submit">Get Weather</button>
+          </form>
+      
+          <div class="card hidden">
+            <h1 class="cityDisplay"></h1>
+            <p class="tempDisplay"></p>
+            <p class="humidityDisplay"></p>
+            <p class="descDisplay"></p>
+            <p class="weatherEmoji"></p>
+          </div>
+      
+          <div class="errorCard hidden">
+            <p class="errorDisplay"></p>
+          </div>
+        </div>
+        <footer class="footer">
+          <p>Crafted with ☀️ by Axcel.</p>
+        </footer>
+        <script src="index.js"></script>
+      </body>
+      </html>
+</body>
+</html>
