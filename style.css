@@ -120,9 +120,9 @@
     animation-fill-mode: both;
   }
   .errorCard {
-    background: rgba(254, 242, 242, 0.9);
+    background: rgba(254, 242, 242, 0.1);
     color: #991b1b;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
   }
@@ -148,7 +148,7 @@
     }
     button[type="submit"]{
       font-size: 1rem;
-      padding: 0.6rem 1rem;
+      padding: 0.6rem 1.5rem;
       
     }
     .card, .errorCard {
@@ -159,6 +159,6 @@
     .humidityDisplay { font-size: 1.25rem; }
     .descDisplay { font-size: 1.3rem; }
     .weatherEmoji { font-size: 3rem; }
-    .errorCard { font-size: 1.5rem; }
+    .errorCard { font-size: 1rem; }
     .footer { font-size: 0.75rem; }
   }
