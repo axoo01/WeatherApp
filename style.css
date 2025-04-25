@@ -134,3 +134,25 @@
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
   }
+  @media (max-width: 640px) {
+    body { padding: 1rem; }
+    .container { margin-top: 5vh; }
+    .weatherForm {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .cityInput, button[type="submit"] {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+    .card, .errorCard {
+        padding: 1.5rem;
+    }
+    .cityDisplay { font-size: 2.5rem; }
+    .tempDisplay { font-size: 2rem; }
+    .humidityDisplay { font-size: 1.25rem; }
+    .descDisplay { font-size: 1.5rem; }
+    .weatherEmoji { font-size: 4rem; }
+    .errorCard { font-size: 1.5rem; }
+    .footer { font-size: 0.75rem; }
+  }
